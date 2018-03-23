@@ -6,6 +6,10 @@ class Products extends React.Component {
     return (
       <div>
         stuff
+        khjasdkahd
+        aksjdhkad
+        akjsdhakjsdh
+        aksjdhakdh
       </div>
     );
   }

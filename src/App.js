@@ -5,14 +5,14 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import './assets/css/default.min.css';
 
-
 import Header from './components/headerComponent/header.jsx';
 import Footer from './components/footerComponent/footer.jsx';
 import HomePage from './components/pages/homePage.jsx';
 import Products from './components/pages/products.jsx';
-
-
-
+import NavBar from './components/navBar/navbar';
+import Particles from './components/particles/particles';
+import p5 from './components/pages/p5'
+import github from './components/pages/github'
 
 class App extends Component {
   render() {
@@ -21,10 +21,14 @@ class App extends Component {
       <MuiThemeProvider>
           <Router>
         <div className="App">
-          <Header />
+
+          <Particles />
+          <NavBar />
 
                 <Route exact path='/' component={HomePage} />
                 <Route exact path='/products' component={Products} />
+                <Route exact path='/p5' component={p5} />
+                <Route exact path='/github' component={github} />
 
           <Footer />
         </div>

@@ -18,28 +18,6 @@ $blue: #22285c;
   transition:$e;
 }
 
-body {
-  font-family: 'Aaux Next', sans-serif;
-  font-size: 25px;
-  color: $black;
-  font-weight: 400;
-  font-style: normal;
-}
-
-a {
-  text-decoration: none;
-  @include transition(.4s ease-in-out);
-  cursor: pointer;
-
-  &:hover {
-     color:  $green;
-    text-decoration: none;
-    @include transition(.4s ease-in-out);
-  }
-  &:active {
-    color: $green;
-  }
-}
 
 .btn {
   color: white;
@@ -48,4 +26,20 @@ a {
 
 .container-fluid {
   line-height: 24px;
+
+}
+
+.footer{
+  padding: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  .icon {
+    padding: 5px;
+    height: 50px;
+
+  }
 }
