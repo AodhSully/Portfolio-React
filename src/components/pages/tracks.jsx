@@ -1,12 +1,12 @@
 import React from 'react';
-import Audio from '../audioPlayer/audioPlayer';
+import Wavesurfer from '../audioPlayer/wavesurfer';
 
 export default class Tracks extends React.Component {
   render () {
     return (
       <div>
         <p>stuff goes here</p>
-
+    
       </div>
     );
   }

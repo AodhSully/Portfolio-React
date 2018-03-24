@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
 
+
+// const css = {
+//   color: 'white',
+//   fontSize: 100,
+//   textAlign: 'center',
+//
+// }
+
+
+
 class HomePage extends Component {
   render() {
     return (
       <div>
-        <p>
+        <h1 >
           Welcome
-        </p>
+        </h1>
       </div>
     );
   }

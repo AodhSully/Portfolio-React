@@ -1,7 +1,7 @@
 $black: #222222;
 $white: #ffffff;
 $lightGrey: #e6e6e6;
-$darkgrey: #333333;
+$darkGrey: #333333;
 $red: #ff1755;
 $green: #078309;
 $blue: #22285c;
@@ -18,16 +18,57 @@ $blue: #22285c;
   transition:$e;
 }
 
-body {
-  font-family: 'Aaux Next', sans-serif;
-  font-size: 25px;
-  color: $white;
-  font-weight: 400;
-  font-style: normal;
+.body {
+  
+  .h1 {
+  	font-family: Futura;
+  	font-size: 19px;
+  	font-style: normal;
+  	font-variant: normal;
+  	font-weight: 400;
+  	line-height: 20.9px;
+    color: $white;
+  }
+  .h3 {
+  	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  	font-size: 14px;
+  	font-style: normal;
+  	font-variant: normal;
+  	font-weight: 500;
+  	line-height: 15.4px;
+    color: $white;
+  }
+  .p {
+  	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  	font-size: 14px;
+  	font-style: normal;
+  	font-variant: normal;
+  	font-weight: 400;
+  	line-height: 20px;
+    color: $white;
+  }
+  .blockquote {
+  	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  	font-size: 21px;
+  	font-style: normal;
+  	font-variant: normal;
+  	font-weight: 400;
+  	line-height: 30px;
+    color: $white;
+  }
+  .pre {
+  	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  	font-size: 13px;
+  	font-style: normal;
+  	font-variant: normal;
+  	font-weight: 400;
+  	line-height: 18.5714px;
+    color: $white;
+  }
 
 }
 
-a {
+.a {
   text-decoration: none;
   @include transition(.4s ease-in-out);
   cursor: pointer;
