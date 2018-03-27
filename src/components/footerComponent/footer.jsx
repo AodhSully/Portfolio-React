@@ -12,6 +12,7 @@ class Footer extends Component {
         <img className='icon' src={linkedin} alt={linkedin}/>
         <img className='icon' src={soundcloud} alt={soundcloud}/>
         <img className='icon' src={mixcloud} alt={mixcloud}/>
+        <p>stuff goes here</p>
       </footer>
     );
   }

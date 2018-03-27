@@ -14,9 +14,13 @@ class HomePage extends Component {
   render() {
     return (
       <div>
-        <h1 >
+        <h1 className="text">
           Welcome
         </h1>
+        <br/>
+        <br/><br/>
+        <br/>
+        <p className="bodyOfText">stuff goes here</p>
       </div>
     );
   }

@@ -1,4 +1,5 @@
 @import "_config.scss";
+@import "glitch.scss";
 
 $black: #222222;
 $white: #ffffff;
@@ -20,15 +21,23 @@ $blue: #22285c;
   transition:$e;
 }
 
+.app {
+  .navbar {
 
-.btn {
-  color: white;
-  background-color: $blue;
+    color: #fff000;
+  }
 }
 
 .container-fluid {
   line-height: 24px;
 
+}
+
+.homePage {
+
+  .bodyOfText {
+    color: $green;
+  }
 }
 
 .footer{
@@ -39,6 +48,8 @@ $blue: #22285c;
   width: 50%;
   position: absolute;
   bottom: 0;
+  color: $blue;
+
   .icon {
     padding: 5px;
     height: 50px;

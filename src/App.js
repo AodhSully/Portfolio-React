@@ -20,14 +20,11 @@ import mixing from './components/pages/mixing';
 class App extends Component {
   render() {
     return (
-
       <MuiThemeProvider>
           <Router>
         <div className="App">
-
           <Particles />
           <NavBar />
-
                 <Route exact path='/homePage' component={HomePage} />
                 <Route exact path='/products' component={Products} />
                 <Route exact path='/p5' component={p5} />
