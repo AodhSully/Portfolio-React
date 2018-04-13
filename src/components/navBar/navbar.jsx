@@ -15,7 +15,11 @@ import sets from '../../components/pages/sets';
 class NavBar extends Component {
   render() {
     return (
+      <div>
+
       <Paper zDepth={2}>
+
+
         <Navbar inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
@@ -46,7 +50,9 @@ class NavBar extends Component {
           </Navbar.Collapse>
         </Navbar>
 
+
       </Paper>
+    </div>
     );
   }
 }

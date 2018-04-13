@@ -5,8 +5,8 @@ export default class Tracks extends React.Component {
   render () {
     return (
       <div>
-        <p>stuff goes here</p>
-    
+        <h1>Tracks page</h1>
+
       </div>
     );
   }

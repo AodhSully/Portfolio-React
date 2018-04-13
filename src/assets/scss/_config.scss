@@ -23,7 +23,7 @@ body {
   h1 {
     color: $white;
   	font-family: Futura;
-  	font-size: 220px;
+  	font-size: 27px;
   	font-style: normal;
   	font-variant: normal;
   	font-weight: 400;
@@ -91,4 +91,12 @@ a {
 
 .container-fluid {
   line-height: 24px;
+}
+
+.animated-age-wraper {
+  position: absolute;
+  top: 62px;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

@@ -1,8 +1,11 @@
 import React from 'react';
+//import AnimatedWrapper from "../animatedWrapper/animatedWrapper";
+
 import github from '../../images/icons/github.png'
 import github2 from '../../images/icons/github2.png'
 
-export default class Github extends React.Component {
+
+class GitHub extends React.Component {
   render() {
     return (
       <div>
@@ -12,3 +15,5 @@ export default class Github extends React.Component {
     );
   }
 }
+
+export default GitHub

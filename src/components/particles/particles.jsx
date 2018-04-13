@@ -19,7 +19,7 @@ export default class App extends React.Component{
              }}
              style={{
                position: 'absolute',
-               zIndex: -10,
+               zIndex: -100,
                width: '100%',
                height: '100%',
                background: '#222'
