@@ -1,11 +1,10 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Wavesurfer from 'react-wavesurfer';
-import wavesurfer from 'wavesurfer.js'
+import wavesurfer from 'wavesurferScript.js'
 import filePath from '../../audio/La Realite.mp3';
 
-require('wavesurferScript.js');
+require('react-wavesurfer');
 
 export default class MyComponent extends React.Component {
   constructor(props) {
@@ -42,4 +41,6 @@ export default class MyComponent extends React.Component {
   }
 }
 
+
+//wavesurfer.load('../src/audio/La Realite.mp3')
 // wavesurfer.load(filePath);
