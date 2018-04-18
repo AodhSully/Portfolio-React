@@ -31,20 +31,9 @@ class App extends Component {
         <div className="App">
 
           <Particles />
-          /*<NavBar />*/
+          <NavBar />
 
-          <section>
-            <nav>
-              <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/github">GitHub</Link></li>
-                <li><Link to="/p5">P5</Link></li>
-                <li><Link to="/tracks">Tracks</Link></li>
-                <li><Link to="/sets">Sets</Link></li>
-                <li><Link to="/mixing">Mixing</Link></li>
-              </ul>
-            </nav>
-          </section>
+
 
                 <Route exact path='/' component={HomePage} />
                 <Route exact path='/github' component={github} />
@@ -53,7 +42,7 @@ class App extends Component {
                 <Route exact path='/tracks' component={tracks} />
                 <Route exact path='/sets' component={sets} />
                 <Route exact path='/mixing' component={mixing} />
-                
+
           <Footer />
         </div>
       </Router>
