@@ -8,11 +8,11 @@ class Footer extends Component {
   render() {
     return (
       <footer className="footer">
-        <img className='icon' src={github} alt={github}/>
-        <img className='icon' src={linkedin} alt={linkedin}/>
-        <img className='icon' src={soundcloud} alt={soundcloud}/>
-        <img className='icon' src={mixcloud} alt={mixcloud}/>
-        <p>stuff goes here</p>
+        <a href="https://www.github.com/AodhSully"><img className='icon' src={github} alt={github}/></a>
+        <a href="https://www.linkedin.com/in/aodhosullivan/"><img className='icon' src={linkedin} alt={linkedin}/></a>
+        <a href="https://soundcloud.com/mrbadcat"><img className='icon' src={soundcloud} alt={soundcloud}/></a>
+        <a href="https://www.mixcloud.com/mrbadcat/"><img className='icon' src={mixcloud} alt={mixcloud}/></a>
+        /*<p>more stuff goes here</p>*/
       </footer>
     );
   }

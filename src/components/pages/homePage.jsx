@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../../assets/css/glitch.min.css'
 //import AnimatedWrapper from "../animatedWrapper/animatedWrapper";
 
 // const css = {
@@ -10,19 +11,20 @@ import React, { Component } from 'react';
 
 
 
-class HomePage extends Component {
+export default class HomePage extends Component {
   render() {
     return (
       <div>
 
+        <h1 className="glitch" data-text="GLITCH">Portfolo</h1>
         <h1 className="text">
           This is the homePage
         </h1>
-        /*
+
         <br/>
         <br/><br/>
         <br/>
-        <p className="bodyOfText">stuff goes here</p>*/
+        <p className="glitch">stuff goes here in the HomePage</p>
       </div>
     );
   }
@@ -30,4 +32,4 @@ class HomePage extends Component {
 
 
 
-export default HomePage;
+// export default HomePage;
