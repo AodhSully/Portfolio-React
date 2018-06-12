@@ -6,12 +6,14 @@
 // }
 //    https://gist.github.com/miguelmota/736a05db65f39214a5db
 
+$black: #222222;
 
 .glitch{
   color:white;
   font-size:100px;
   position:relative;
   width:400px;
+  height: 100px;
   margin:0 auto;
 }
 
@@ -21,18 +23,18 @@
   $steps:20;
   @for $i from 0 through $steps{
     #{percentage($i*(1/$steps))}{
-      clip:rect(random(100)+px,9999px,random(100)+px,0);
+      clip:rect(random(40)+px,500px,random(10)+px,0);
     }
   }
 }
 .glitch:after{
   content:attr(data-text);
   position:absolute;
-  left:2px;
-  text-shadow:-1px 0 red;
+  left:1px;
+  text-shadow:-5px 0 red;
   top:0;
   color:white;
-  background:black;
+  background:$black;
   overflow:hidden;
   clip:rect(0,900px,0,0);
   animation:noise-anim 2s infinite linear alternate-reverse;
@@ -42,7 +44,7 @@
   $steps:20;
   @for $i from 0 through $steps{
     #{percentage($i*(1/$steps))}{
-      clip:rect(random(100)+px,9999px,random(100)+px,0);
+      clip:rect(random(40)+px,500px,random(20)+px,0);
     }
   }
 }
@@ -50,13 +52,13 @@
   content:attr(data-text);
   position:absolute;
   left:-1px;
-  text-shadow:1px 0 blue;
+  text-shadow:5px 0 blue;
   top:0;
   color:white;
-  background:black;
+  background:$black;
   overflow:hidden;
   clip:rect(0,900px,0,0);
-  animation:noise-anim-2 3s infinite linear alternate-reverse;
+  animation:noise-anim-2 1s infinite linear alternate-reverse;
 }
 
 // .glitch{

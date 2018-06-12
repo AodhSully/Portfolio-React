@@ -24,7 +24,7 @@ export default class HomePage extends Component {
         <br/>
         <br/><br/>
         <br/>
-        <p className="glitch">stuff goes here in the HomePage</p>
+        <p className="placeHolder">stuff goes here in the HomePage</p>
       </div>
     );
   }
