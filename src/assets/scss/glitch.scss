@@ -26,20 +26,21 @@ $black: #222222;
   $steps:20;
   @for $i from 0 through $steps{
     #{percentage($i*(1/$steps))}{
-      clip:rect(random(100)+px,900px,random(100)+px,0);
+      clip:rect(random(100)+px,random(900)+px,random(100)+px,0);
     }
   }
 }
+
 .glitch:after{
   content:attr(data-text);
   position:absolute;
-  left:1px;
+  left:50px;
   text-shadow:-2px 0 red;
-  top:0;
+  top:20px;
   color:white;
   background:$black;
   overflow:hidden;
-  clip:rect(0,900px,0,0);
+  clip:rect(0,1000,1000,0);
   animation:noise-anim 1s infinite linear alternate-reverse;
 }
 
@@ -47,21 +48,21 @@ $black: #222222;
   $steps:20;
   @for $i from 0 through $steps{
     #{percentage($i*(1/$steps))}{
-      clip:rect(random(50)+px,900px,random(10)+px,0);
+      clip:rect(random(10)+px,900px,random(10)+px,0);
     }
   }
 }
 .glitch:before{
   content:attr(data-text);
   position:absolute;
-  left:-5px;
+  left:17px;
   text-shadow:2px 0 blue;
   top:0;
   color:white;
   background:$black;
   overflow:hidden;
-  clip:rect(0,900px,0,0);
-  animation:noise-anim-2 10s infinite linear alternate-reverse;
+  clip:rect(0,1000,1000,0);
+  animation:noise-anim-2 1s infinite linear alternate-reverse;
 }
 
 // .glitch{
