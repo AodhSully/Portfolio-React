@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import github from '../../images/icons/github2.png'
 import soundcloud from '../../images/icons/soundcloud2.png'
 import linkedin from '../../images/icons/linkedin.png'
-import mixcloud from '../../images/icons/mixcloud.png'
+import mixcloud from '../../images/icons/mixcloudIcon.png'
 
 class Footer extends Component {
   render() {
@@ -12,7 +12,7 @@ class Footer extends Component {
         <a href="https://www.linkedin.com/in/aodhosullivan/"><img className='icon' src={linkedin} alt={linkedin}/></a>
         <a href="https://soundcloud.com/mrbadcat"><img className='icon' src={soundcloud} alt={soundcloud}/></a>
         <a href="https://www.mixcloud.com/mrbadcat/"><img className='icon' src={mixcloud} alt={mixcloud}/></a>
-        /*<p>more stuff goes here</p>*/
+      
       </footer>
     );
   }

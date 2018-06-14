@@ -16,7 +16,7 @@ export default class HomePage extends Component {
     return (
       <div>
 
-        <h1 className="glitch" data-text="GLITCH">Portfolo</h1>
+        <h1 className="glitch" data-text="Portfolo">Portfolo</h1>
         <h1 className="text">
           This is the homePage
         </h1>

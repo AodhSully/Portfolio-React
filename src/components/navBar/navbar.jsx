@@ -41,7 +41,7 @@ class NavBar extends Component {
             </Nav>
             <Nav pullRight>
               <NavItem eventKey={1} href="#">
-                Link Right
+                Image Editing
               </NavItem>
               <NavItem eventKey={2} href="#">
                 Link Right
