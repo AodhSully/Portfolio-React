@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 //import TransitionGroup from "react-transition-group/TransitionGroup";
 
 import './assets/css/default.min.css';
 
-import Header from './components/headerComponent/header.jsx';
+// import Header from './components/headerComponent/header.jsx';
 import Footer from './components/footerComponent/footer.jsx';
 import HomePage from './components/pages/homePage.jsx';
 import Products from './components/pages/products.jsx';
@@ -18,10 +18,10 @@ import tracks from './components/pages/tracks';
 import sets from './components/pages/sets';
 import mixing from './components/pages/mixing';
 
-const firstChild = props => {
-  const childrenArray = React.Children.toArray(props.children);
-  return childrenArray[0] || null;
-};
+// const firstChild = props => {
+//   const childrenArray = React.Children.toArray(props.children);
+//   return childrenArray[0] || null;
+// };
 
 class App extends Component {
   render() {
