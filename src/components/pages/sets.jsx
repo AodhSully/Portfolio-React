@@ -8,7 +8,7 @@ export default class Sets extends React.Component {
         <h1 className="glitch" data-text="Sets">Sets</h1>
 
 
-        <div><Waveform src={'https://wavesurfer-js.org/example/media/demo.mp3'} /></div>
+        <div className="videoPlayer"><Waveform src={'https://wavesurfer-js.org/example/media/demo.mp3'} /></div>
       </div>
     );
   }

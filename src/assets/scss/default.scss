@@ -27,14 +27,12 @@ $blue: #22285c;
 
 .app {
   .navbar {
-
     color: #fff000;
   }
 }
 
 .container-fluid {
   line-height: 24px;
-
 }
 
 .homePage {
@@ -54,6 +52,17 @@ $blue: #22285c;
   }
 }
 
+.videoPage {
+  .videoPlayer {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin: 0 auto;
+   width: 40%;
+   padding-top: 10%;
+  }
+}
+
 .footer{
   padding: 15px;
   display: block;
@@ -69,8 +78,4 @@ $blue: #22285c;
     height: 50px;
 
   }
-
-
-
-
 }

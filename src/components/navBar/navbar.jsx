@@ -49,6 +49,9 @@ class NavBar extends Component {
               <LinkContainer to="/sets">
                 <NavItem eventKey={3.3}>Sets</NavItem>
               </LinkContainer>
+              <LinkContainer to="/video">
+                <NavItem eventKey={3.4}>Video</NavItem>
+              </LinkContainer>
 
             </Nav>
             <Nav pullRight>

@@ -5,6 +5,7 @@ implement react-spring
 implement WaveSurfer
 WaveSurfer action buttons
 fix glitch position
+fix placement of h1 and center videoPlayer
 
 
 /*****************DONE*********************/

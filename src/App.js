@@ -9,7 +9,7 @@ import './assets/css/default.min.css';
 // import Header from './components/headerComponent/header.jsx';
 import Footer from './components/footerComponent/footer.jsx';
 import HomePage from './components/pages/homePage.jsx';
-import Products from './components/pages/products.jsx';
+import Video from './components/pages/video.jsx';
 import NavBar from './components/navBar/navbar';
 import Particles from './components/particles/particles';
 import p5 from './components/pages/p5'
@@ -17,6 +17,7 @@ import github from './components/pages/github';
 import tracks from './components/pages/tracks';
 import sets from './components/pages/sets';
 import mixing from './components/pages/mixing';
+
 
 // const firstChild = props => {
 //   const childrenArray = React.Children.toArray(props.children);
@@ -37,7 +38,7 @@ class App extends Component {
 
                 <Route exact path='/homePage' component={HomePage} />
                 <Route exact path='/github' component={github} />
-                <Route exact path='/products' component={Products} />
+                <Route exact path='/video' component={Video} />
                 <Route exact path='/p5' component={p5} />
                 <Route exact path='/tracks' component={tracks} />
                 <Route exact path='/sets' component={sets} />
