@@ -1,21 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Wavesurfer from 'react-wavesurfer';
-//import wavesurfer from 'wavesurferScript.js'
-import filePath from '../../audio/La Realite.mp3';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import WaveSurfer from 'wavesurfer.js'
 
-//require('react-wavesurfer');
-
-export default class MyComponent extends React.Component {
+export default class Waveform extends React.Component {
   constructor(props) {
-    super(props);
-
+    super(props)
     this.state = {
-      playing: false,
+
+    }
+  }
+  getInitialState() {
+    return {
+      playing: true,
       pos: 0
-    };
-    this.handleTogglePlay = this.handleTogglePlay.bind(this);
-    this.handlePosChange = this.handlePosChange.bind(this);
+    }
   }
   handleTogglePlay() {
     this.setState({
@@ -27,20 +25,31 @@ export default class MyComponent extends React.Component {
       pos: e.originalArgs[0]
     });
   }
+  componentDidMount() {
+    this.$el = ReactDOM.findDOMNode(this)
+    this.$waveform = this.$el.querySelector('.wave')
+    this.wavesurfer = WaveSurfer.create({
+      container: this.$waveform,
+      waveColor: 'violet',
+      progressColor: 'purple'
+    })
+    this.wavesurfer.load(this.props.src)
+  }
+
+
+  componentWillUnmount() {
+
+  }
+
   render() {
     return (
-      <div>
-        <Wavesurfer
-          audioFile={'../../audio/La Realite.mp3'}
-          pos={this.state.pos}
-          onPosChange={this.handlePosChange}
-          playing={this.state.playing}
-        />
+      <div className='waveform'>
+        <div className='wave'></div>
       </div>
-      );
+    )
   }
 }
 
-
-//wavesurfer.load('../src/audio/La Realite.mp3')
-// wavesurfer.load(filePath);
+Waveform.defaultProps = {
+  src: ""
+}

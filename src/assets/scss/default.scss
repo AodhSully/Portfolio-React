@@ -24,6 +24,7 @@ $blue: #22285c;
 .body{
   font-family: sans-serif;
 }
+
 .app {
   .navbar {
 
@@ -42,6 +43,14 @@ $blue: #22285c;
   }
   .bodyOfText {
     color: $green;
+  }
+}
+
+.tracksPage {
+  .waveform {
+    border: 10px;
+    border-color: $white;
+    z-index: 10;
   }
 }
 

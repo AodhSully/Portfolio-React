@@ -9,6 +9,7 @@ class GitHub extends React.Component {
   render() {
     return (
       <div>
+        <h1 className="glitch" data-text="GitHub">GitHub</h1>
         <img src={github} alt={github} />
         <img src={github2} alt={github2} />
       </div>

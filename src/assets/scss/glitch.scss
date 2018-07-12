@@ -1,9 +1,3 @@
-// .homepage .text {
-//   // color: white;
-//   // font-size: 150px;
-//   font-size: 100px;
-//   @include textGlitch("text", 17, white, black, red, blue, 450, 115);
-// }
 //    https://gist.github.com/miguelmota/736a05db65f39214a5db
 
 $black: #222222;
@@ -15,11 +9,11 @@ $black: #222222;
   width:auto;
   height: 100px;
   margin:0 auto;
-  padding: 20px;
+  padding-top: 20px;
   width: 50%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 40%;
+  margin-right: 45%;
 }
 
 @keyframes noise-anim{
@@ -64,58 +58,3 @@ $black: #222222;
   clip:rect(0,1000,1000,0);
   animation:noise-anim-2 1s infinite linear alternate-reverse;
 }
-
-// .glitch{
-// color:white;
-// font-size:100px;
-// position:relative;
-// width:400px;
-// margin:0 auto;
-// }
-//
-// @mixin textGlitch($name, $intensity, $textColor, $background, $highlightColor1, $highlightColor2, $width, $height) {
-//
-//   color: $textColor;
-//   position: relative;
-//   $steps: $intensity;
-//
-//   // Ensure the @keyframes are generated at the root level
-//   @at-root {
-//     // We need two different ones
-//     @for $i from 1 through 2 {
-//       @keyframes #{$name}-anim-#{$i} {
-//         @for $i from 0 through $steps {
-//           #{percentage($i*(1/$steps))} {
-//             clip: rect(
-//               random($height)+px,
-//               $width+px,
-//               random($height)+px,
-//               0
-//             );
-//           }
-//         }
-//       }
-//     }
-//   }
-//   &:before,
-//   &:after {
-//     content: attr(data-text);
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     background: $background;
-//     clip: rect(0, 0, 0, 0);
-//   }
-//   &:after {
-//     left: 2px;
-//     text-shadow: -1px 0 $highlightColor1;
-//     animation: #{$name}-anim-1 2s infinite linear alternate-reverse;
-//   }
-//   &:before {
-//     left: -2px;
-//     text-shadow: 2px 0 $highlightColor2;
-//     animation: #{$name}-anim-2 3s infinite linear alternate-reverse;
-//   }
-//
-// }

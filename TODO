@@ -1,6 +1,14 @@
-make footer images links
 find audio player with waveform display
 fade page transitions
 figure out p5 instances
 implement react-spring
+implement WaveSurfer
+WaveSurfer action buttons
+fix glitch position
+
+
+/*****************DONE*********************/
+make footer images links
 fix dom nesting errors
+
+Wavesurfer draw Waves

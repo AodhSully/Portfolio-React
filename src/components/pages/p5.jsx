@@ -8,6 +8,7 @@ export default class P5 extends React.Component {
   render() {
     return (
       <div>
+        <h1 className="glitch" data-text="P5.js">P5.js</h1>
         <p>'aslkfjsdlfjs       sdlfkjsldfj      sldjfnsldfsdlflsdfjsd      sdlfkjsdlfjsdlfjsfj'</p>
         <P5Wrapper sketch={sketch} />
       </div>

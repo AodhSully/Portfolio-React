@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
-import { Nav, NavItem,  Navbar  } from 'react-bootstrap';
+import { Nav, NavItem,  Navbar,  } from 'react-bootstrap';
 import Paper from 'material-ui/Paper';
 import { LinkContainer } from 'react-router-bootstrap';
 // import { BrowserRouter as Router, Route } from 'react-router-dom';
@@ -40,8 +40,6 @@ class NavBar extends Component {
                 <NavItem eventKey={2}>P5.js </NavItem>
               </LinkContainer>
 
-                <NavItem divider />
-                <NavItem divider />
               <LinkContainer to="/tracks">
                 <NavItem eventKey={3.1}>Tracks</NavItem>
               </LinkContainer>
