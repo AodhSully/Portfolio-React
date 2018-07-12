@@ -9,22 +9,28 @@ export default class Waveform extends React.Component {
 
     }
   }
+
   getInitialState() {
     return {
-      playing: true,
+      playing: false,
       pos: 0
     }
   }
+
   handleTogglePlay() {
     this.setState({
       playing: !this.state.playing
     });
+
+  
   }
+
   handlePosChange(e) {
     this.setState({
       pos: e.originalArgs[0]
     });
   }
+
   componentDidMount() {
     this.$el = ReactDOM.findDOMNode(this)
     this.$waveform = this.$el.querySelector('.wave')
