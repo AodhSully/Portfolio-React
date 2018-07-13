@@ -1,28 +1,27 @@
-// export default function star (p) {
-//
-//   // Star [] p.stars = new Star[900];
-//   var speed;
-//   var stars;
-//   var Star;
-//
-//   p.setup = function () {
-//     p.createCanvas(800, 400);
-//     p.stars = new Star(200);
-//
-//     for (var i = 0; i < p.stars.length; i++){
-//       p.stars[i] = new p.Star();
-//     }
-//   }
-//
-//   p.draw = function () {
-//     p.speed = p.map(p.mouseX, 0, p.width, 0 , 10);
-//     p.background(0);
-//     p.translate(p.width/2, p.height/2);
-//
-//     for (var i = 0; i < p.stars.length; i++){
-//       p.stars[i].update();
-//       p.stars[i].show();
-//     }
-//   }
-//
-// };
+export default function star (s) {
+
+  var speed;
+  var stars;
+  var Star;
+
+  // Star [] p.stars = new Star[900];
+  s.setup = function () {
+    s.createCanvas(600, 400);
+    s.stars = new Star(200);
+
+    for (var i = 0; i < s.stars.length; i++){
+      s.stars[i] = new s.Star();
+    }
+  }
+
+  s.draw = function () {
+    s.speed = s.map(s.mouseX, 0, s.width, 0 , 10);
+    s.background(0);
+    s.translate(s.width/2, s.height/2);
+
+    for (var i = 0; i < s.stars.length; i++){
+      s.stars[i].update();
+      s.stars[i].show();
+    }
+  }
+};

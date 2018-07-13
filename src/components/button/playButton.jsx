@@ -13,12 +13,11 @@ export default class PlayButton extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-
   handleClick() {
     this.setState(prevState => ({
       isToggleOn: !prevState.isToggleOn
     }));
-    console.log("clicked")
+    console.log("play")
   }
 
   render() {

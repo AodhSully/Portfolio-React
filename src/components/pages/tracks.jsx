@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Waveform from '../audioPlayer/wavesurfer';
-import PlayButton from '../button/playButton';
+//import PlayButton from '../button/playButton';
 //import WaveSurfer from '../audioPlayer/wavesurferScript';
 
 require('wavesurfer.js');
@@ -14,10 +14,7 @@ export default class Tracks extends React.Component {
     return (
       <div className="tracksPage">
         <h1 className="glitch" data-text="Tracks">Tracks</h1>
-
-        <div><Waveform src={'https://wavesurfer-js.org/example/media/demo.mp3'} /><PlayButton /></div>
-        <div><Waveform src={'https://archive.org/download/testmp3testfile/mpthreetest.mp3'} /><PlayButton /></div>
-        <div><Waveform src={'https://freesound.org/people/The%20Baron/sounds/98435/download/98435__the-baron__machine-loop-06.wav'} /><PlayButton /></div>
+        <Waveform     />
 
       </div>
     );
@@ -25,6 +22,14 @@ export default class Tracks extends React.Component {
 }
 
 
+// <div><Waveform
+//   src={'https://wavesurfer-js.org/example/media/demo.mp3'} /></div>
+// <div><Waveform src={'https://archive.org/download/testmp3testfile/mpthreetest.mp3'} /></div>
+// <div><Waveform src={'https://freesound.org/people/The%20Baron/sounds/98435/download/98435__the-baron__machine-loop-06.wav'} /></div>
+
+// pos={this.state.pos}
+// onPosChange={this.handlePosChange}
+// playing={this.state.playing}
 //<div id="wavesurfer"></div>
 
 

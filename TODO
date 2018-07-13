@@ -6,7 +6,9 @@ implement WaveSurfer
 WaveSurfer action buttons
 fix glitch position
 fix placement of h1 and center videoPlayer
-
+implement carousel for p5 sketches
+make play button work
+set default page as home page
 
 /*****************DONE*********************/
 make footer images links

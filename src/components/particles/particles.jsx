@@ -17,6 +17,7 @@ export default class App extends React.Component{
                  }
                }
              }}
+             
              style={{
                position: 'absolute',
                zIndex: -100,
