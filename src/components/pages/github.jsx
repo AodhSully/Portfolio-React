@@ -8,10 +8,10 @@ import github2 from '../../images/icons/github2.png'
 class GitHub extends React.Component {
   render() {
     return (
-      <div>
+      <div className="gitPage">
         <h1 className="glitch" data-text="GitHub">GitHub</h1>
-        <img src={github} alt={github} />
-        <img src={github2} alt={github2} />
+        <img className="gitLogo" src={github} alt={github} />
+        <img className="gitLogo" src={github2} alt={github2} />
       </div>
     );
   }

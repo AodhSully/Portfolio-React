@@ -38,11 +38,11 @@ class App extends Component {
 
                 <Route exact path='/homePage' component={HomePage} />
                 <Route exact path='/github' component={github} />
-                <Route exact path='/video' component={Video} />
                 <Route exact path='/p5' component={p5} />
                 <Route exact path='/tracks' component={tracks} />
                 <Route exact path='/sets' component={sets} />
                 <Route exact path='/mixing' component={mixing} />
+                <Route exact path='/video' component={Video} />
 
           <Footer />
         </div>

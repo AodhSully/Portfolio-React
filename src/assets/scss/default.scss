@@ -44,6 +44,16 @@ $blue: #22285c;
   }
 }
 
+
+.gitPage {
+  .gitLogo {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+
+  }
+}
 .tracksPage {
   .waveform {
     border: 10px;
@@ -60,23 +70,42 @@ $blue: #22285c;
    margin: 0 auto;
    width: 40%;
    padding-top: 10%;
+
   }
 }
 
-.carouselImage {
-  .carouselImagePic {
-    .p5text{
-      padding: 2px;
+
+.p5Page {
+
+  .carouselImage {
+    padding-top: 10%;
+    .carouselImagePic {
+
+      .p5text{
+        padding: 2px;
+      }
     }
   }
+
+  li.slide.selected {
+    padding: 10px;
+    padding-top: 30px;
+    background: rgba(0, 0, 0, 0.4);
+
+  }
+
+  .canvas .slide {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  .p5text{
+    padding: 20px;
+    text-align: center;
+  }
 }
 
-li.slide.selected {
-  padding: 10px;
-  padding-top: 30px;
-  background: rgba(0, 0, 0, 0.4);
-
-}
 
 .footer{
   padding: 15px;
