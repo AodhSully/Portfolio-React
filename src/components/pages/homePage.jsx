@@ -2,15 +2,6 @@ import React, { Component } from 'react';
 import '../../assets/css/glitch.min.css'
 //import AnimatedWrapper from "../animatedWrapper/animatedWrapper";
 
-// const css = {
-//   color: 'white',
-//   fontSize: 100,
-//   textAlign: 'center',
-//
-// }
-
-
-
 export default class HomePage extends Component {
   render() {
     return (
@@ -29,7 +20,3 @@ export default class HomePage extends Component {
     );
   }
 }
-
-
-
-// export default HomePage;

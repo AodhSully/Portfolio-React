@@ -4,18 +4,20 @@ import soundcloud from '../../images/icons/soundcloud2.png'
 import linkedin from '../../images/icons/linkedin.png'
 import mixcloud from '../../images/icons/mixcloudIcon.png'
 
-class Footer extends Component {
+export default class Footer extends Component {
   render() {
     return (
-      <footer className="footer">
-        <a href="https://www.github.com/AodhSully"><img className='icon' src={github} alt={github}/></a>
-        <a href="https://www.linkedin.com/in/aodhosullivan/"><img className='icon' src={linkedin} alt={linkedin}/></a>
-        <a href="https://soundcloud.com/mrbadcat"><img className='icon' src={soundcloud} alt={soundcloud}/></a>
-        <a href="https://www.mixcloud.com/mrbadcat/"><img className='icon' src={mixcloud} alt={mixcloud}/></a>
-      
-      </footer>
+      <div className="footerWrapper">
+
+        <footer className="footer">
+          <a href="https://www.github.com/AodhSully" target="_blank" rel="noopener noreferrer"><img className='icon' src={github} alt={github}/></a>
+          <a href="https://www.linkedin.com/in/aodhosullivan/" target="_blank" rel="noopener noreferrer"><img className='icon' src={linkedin} alt={linkedin}/></a>
+          <a href="https://soundcloud.com/mrbadcat" target="_blank" rel="noopener noreferrer"><img className='icon' src={soundcloud} alt={soundcloud}/></a>
+          <a href="https://www.mixcloud.com/mrbadcat/" target="_blank" rel="noopener noreferrer"><img className='icon' src={mixcloud} alt={mixcloud}/></a>
+          <p className="footerText"><i>Aodh O'Sullivan &copy; 2018</i></p>
+
+        </footer>
+      </div>
     );
   }
 }
-
-export default Footer;

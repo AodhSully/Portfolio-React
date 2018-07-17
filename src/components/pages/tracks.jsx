@@ -3,6 +3,7 @@ import React from 'react';
 import Waveform from '../audioPlayer/wavesurfer';
 //import PlayButton from '../button/playButton';
 //import WaveSurfer from '../audioPlayer/wavesurferScript';
+import soundcloud from '../../images/icons/soundcloud2.png'
 
 require('wavesurfer.js');
 require('wavesurfer.js/dist/plugin/wavesurfer.timeline.min.js');
@@ -15,7 +16,10 @@ export default class Tracks extends React.Component {
       <div className="tracksPage">
         <h1 className="glitch" data-text="Tracks">Tracks</h1>
         <Waveform     />
-
+        <div className="soundcoudTrackIcon">
+          <a href="https://soundcloud.com/mrbadcat" target="_blank" rel="noopener noreferrer"><p>More Tracks & Downloads available here :</p></a>
+          <a href="https://soundcloud.com/mrbadcat" target="_blank" rel="noopener noreferrer"><img className='trackIcon' src={soundcloud} alt={soundcloud}/></a>
+        </div>
       </div>
     );
   }

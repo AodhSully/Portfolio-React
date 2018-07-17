@@ -46,43 +46,38 @@ $blue: #22285c;
 
 
 .gitPage {
-  .gitLogo {
-    display: inline-block;
-    margin: 0 auto;
-    max-width: 400px;
-    padding: 20px;
+  .gitContainer {
+      text-align:center;
+    .gitText{
+        text-align:center;
+      padding-left: 20px;
+      display: table;
+    }
+    .gitLogo {
+      //display: inline-block;
+      //margin: 0 auto;
+      max-width: 400px;
+      padding: 20px;
+      //width:960px;
+      margin:auto;
+      overflow:hidden;
+      display:inline-block;
 
+    }
   }
 }
-.tracksPage {
-  .waveform {
-    border: 10px;
-    border-color: $white;
-    z-index: 10;
-  }
-}
-
-.videoPage {
-  .videoPlayer {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   margin: 0 auto;
-   width: 40%;
-   padding-top: 10%;
-
-  }
-}
-
 
 .p5Page {
 
-  .carouselImage {
-    padding-top: 10%;
-    .carouselImagePic {
+  .carousel .slider-wrapper {
 
-      .p5text{
-        padding: 2px;
+    .carouselImage {
+      padding-top: 10%;
+      .carouselImagePic {
+
+        .p5text{
+          padding: 2px;
+        }
       }
     }
   }
@@ -91,7 +86,11 @@ $blue: #22285c;
     padding: 10px;
     padding-top: 30px;
     background: rgba(0, 0, 0, 0.4);
+  }
 
+  li.slide.selected div div canvas {
+    max-height: 400px;
+    max-width: 900;
   }
 
   .canvas .slide {
@@ -106,20 +105,79 @@ $blue: #22285c;
   }
 }
 
+.tracksPage {
+  .waveform {
+    border: 10px;
+    border-color: $white;
+    z-index: 10;
+  }
+  .soundcoudTrackIcon{
+    text-align: center;
+    padding-top: 20px;
 
-.footer{
-  padding: 15px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    .trackIcon {
+    max-width: 300px;
+  }
 
-  position: absolute;
-  bottom: 0;
-  color: $blue;
 
-  .icon {
-    padding: 5px;
-    height: 50px;
+  }
+}
 
+.videoPage {
+  .videoElement {
+
+    padding-top: 20px;
+  }
+  .videoText {
+    text-align: center;
+  }
+  .videoPlayer {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin: 0 auto;
+   width: 50%;
+   padding-top: 10%;
+
+   .player {
+
+   }
+  }
+}
+
+.mixingPage {
+  .soundcoudTrackIcon {
+    text-align: center;
+    padding-top: 20px;
+
+    .trackIcon {
+    max-width: 300px;
+    }
+  }
+}
+
+.setsPage {
+  .pageTitle {
+    text-align: center;
+  }
+  .mixcoudTrackIcon {
+    text-align: center;
+
+    padding-top: 20px;
+  }
+  .trackIcon {
+    max-width: 350px;
+    padding: 10px;
+  }
+}
+
+.footerWrapper{
+  text-align: center;
+    .icon {
+      padding: 5px;
+      max-height: 50px;
+      .footerText {
+        font-size: 9px;
+    }
   }
 }

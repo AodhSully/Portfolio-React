@@ -4,7 +4,8 @@ export default function sketch (p) {
   let rotation = 0;
 
   p.setup = function () {
-    p.createCanvas(600, 400, p.WEBGL);
+    p.createCanvas(900, 400, p.WEBGL);
+    // p.createCanvas(p.windowWidth, p.windowHeight, p.WEBGL);
   };
 
   p.myCustomRedrawAccordingToNewPropsHandler = function (props) {
@@ -31,4 +32,8 @@ export default function sketch (p) {
     p.sphere(300);
     p.pop();
   };
+
+  p.windowResizeed = function () {
+    p.resizeCanvas(p.windowWidth, p.windowHeight)
+  }
 };
