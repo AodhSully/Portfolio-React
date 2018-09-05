@@ -12,7 +12,7 @@ const styles = {
 
 };
 
-class App extends React.Component {
+export default class Tab extends React.Component {
   constructor(props) {
     super(props);
     this.state = {active: 'aTab'}; //defaults to 'aTab'
@@ -43,4 +43,3 @@ class App extends React.Component {
     );
   }
 };
-export default App;

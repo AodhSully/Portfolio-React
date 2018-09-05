@@ -12,14 +12,12 @@ import { LinkContainer } from 'react-router-bootstrap';
 // import mixing from '../../components/pages/mixing';
 // import sets from '../../components/pages/sets';
 
-
-class NavBar extends Component {
+export default class NavBar extends Component {
   render() {
     return (
       <div>
 
       <Paper zDepth={2}>
-
 
         <Navbar inverse collapseOnSelect>
           <Navbar.Header>
@@ -52,12 +50,13 @@ class NavBar extends Component {
               <LinkContainer to="/video">
                 <NavItem eventKey={3.4}>Video</NavItem>
               </LinkContainer>
-
+              <LinkContainer to="/imageEditing">
+                <NavItem eventKey={4}>Image Editing</NavItem>
+              </LinkContainer>
             </Nav>
             <Nav pullRight>
-              <NavItem eventKey={1} href="#">
-                Image Editing
-              </NavItem>
+              
+
               <NavItem eventKey={2} href="#">
                 Link Right
               </NavItem>
@@ -65,11 +64,8 @@ class NavBar extends Component {
           </Navbar.Collapse>
         </Navbar>
 
-
       </Paper>
     </div>
     );
   }
 }
-
-export default NavBar;

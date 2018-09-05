@@ -4,7 +4,6 @@ import YouTube from 'react-youtube';
 export default class YouTube extends React.Component {
   render() {
     const opts = {
-
       playerVars: { // https://developers.google.com/youtube/player_parameters
         autoplay: 1
       }

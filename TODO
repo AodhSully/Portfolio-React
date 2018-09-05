@@ -1,17 +1,39 @@
-find audio player with waveform display
-fade page transitions
-figure out p5 instances
-implement react-spring
-implement WaveSurfer
-WaveSurfer action buttons
-fix glitch position
-fix placement of h1 and center videoPlayer
-implement carousel for p5 sketches
-make play button work
+/*****************General*********************/
+implement react-spring for page transitions
 set default page as home page
+create Image editing page - use carousel
+find more old image works - Bondi etc...
+add other videos and use tabs
+style Nav bar
+show current active navbar tab in $green
+page titles not centered when browser is windowed
+add about/contact page
+make github word(image) white
+
+/*****************WaveSurfer*********************/
+implement WaveSurfer - wavesurfer now reads files and displays waveforms but does not play audio
+WaveSurfer ----- style action buttons
+make play/pause button work
+
+/*****************P5 Sketces*********************/
+fractal ----- fix -- "slider = f.createSlider(0, TWO_PI, PI / 4, 0.01);"
+matrix ---- needs debuging only displays black screen w/green dots on side for a moment
+recursion ----- fix -- onMouseClick() random color ---- throws error from p5 library
+fractal ----- fix -- createSlider();
+Globe ---- make rotate
+
+/*****************Image editing*********************/
+setup tab selector for personal work vs recohero etc....
+center images
 
 /*****************DONE*********************/
+fix glitch effect position over page titles
+center videoPlayer
 make footer images links
+change favicon
 fix dom nesting errors
-
+figure out p5 instances
+force footer to bottom of page
+implement carousel for p5 sketches
 Wavesurfer draw Waves
+find audio player with waveform display

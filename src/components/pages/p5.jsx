@@ -1,10 +1,4 @@
 import React from 'react';
-//import P5Wrapper from 'react-p5-wrapper';
-//import rotation from '../p5sketches/sketch1'
-//import sketch from '../p5sketches/sketch1'
-//import star from '../p5sketches/star'
-//import newp5 from '../p5sketches/newp5'
-//import { Carousel } from 'react-responsive-carousel';
 import P5Carouse from '../carousel/p5carousel';
 
 export default class P5 extends React.Component {
@@ -19,8 +13,3 @@ export default class P5 extends React.Component {
     );
   }
 }
-
-// <P5Wrapper sketch={sketch}  />
-// <P5Wrapper sketch={newp5}  />
-// <P5Wrapper sketch={star}  />
-//newp5

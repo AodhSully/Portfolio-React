@@ -16,6 +16,7 @@ import github from './components/pages/github';
 import tracks from './components/pages/tracks';
 import sets from './components/pages/sets';
 import mixing from './components/pages/mixing';
+import imageEditing from './components/pages/imageEditing';
 import Footer from './components/footerComponent/footer.jsx';
 
 
@@ -36,6 +37,7 @@ class App extends Component {
                 <Route exact path='/sets' component={sets} />
                 <Route exact path='/mixing' component={mixing} />
                 <Route exact path='/video' component={Video} />
+                <Route exact path='/imageEditing' component={imageEditing} />
 
           <Footer />
         </div>

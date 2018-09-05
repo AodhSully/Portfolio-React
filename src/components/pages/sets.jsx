@@ -15,7 +15,7 @@ export default class Sets extends React.Component {
             <a href="https://www.mixcloud.com/mrbadcat/" target="_blank" rel="noopener noreferrer"><p>Some more DJ mixes available here :</p></a>
             <a href="https://www.mixcloud.com/mrbadcat/" target="_blank" rel="noopener noreferrer"><img className='trackIcon' src={mixcloud} alt={mixcloud}/></a>
           </div>
-    </div>
+      </div>
     );
   }
 }

@@ -1,19 +1,16 @@
 //    https://gist.github.com/miguelmota/736a05db65f39214a5db
-
 $black: #222222;
 
 .glitch{
   color:white;
   font-size:100px;
   position:relative;
-  width:auto;
   height: 100px;
-  // margin:0 auto;
+  margin:0 auto;
   padding-top: 20px;
-  // width: 50%;
-  display: block;
-  // margin-left: 40%;
-  // margin-right: 45%;
+  width: 11%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
@@ -30,7 +27,7 @@ $black: #222222;
   text-align: center;
   content:attr(data-text);
   position:absolute;
-  left:50px;
+  left:1px;
   text-shadow:-2px 0 red;
   top:20px;
   color: #95a5a6;
@@ -45,15 +42,16 @@ $black: #222222;
   $steps:20;
   @for $i from 0 through $steps{
     #{percentage($i*(1/$steps))}{
-      clip:rect(random(10)+px,900px,random(10)+px,0);
+      clip:rect(random(3)+px,900px,random(7)+px,0);
     }
   }
 }
+
 .glitch:before{
   text-align: center;
   content:attr(data-text);
   position:absolute;
-  left:17px;
+  left:1px;
   text-shadow:2px 0 blue;
   top:0;
   color: #ecf0f1;

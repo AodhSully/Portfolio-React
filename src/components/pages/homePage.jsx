@@ -5,17 +5,18 @@ import '../../assets/css/glitch.min.css'
 export default class HomePage extends Component {
   render() {
     return (
-      <div>
-
-        <h1 className="glitch" data-text="Portfolo">Portfolo</h1>
-        <h1 className="text">
-          This is the homePage
-        </h1>
-
-        <br/>
-        <br/><br/>
-        <br/>
-        <p className="placeHolder">stuff goes here in the HomePage</p>
+      <div className="homePage">
+        <h1 className="glitch" data-text="Portfolio">Portfolio</h1>
+        <div className="homeText">
+          <h1>Welcome to my Portfolio</h1>
+          <br/>
+          <br/>
+          <p className="textHomePage">Throughout the site you will find works I have completed in coding, audio, video and Image editiing </p>
+          <p className="textHomePage">along with links to external sites hosting my works</p>
+          <h1>Enjoy!</h1>
+          <br/>
+          <br/>
+        </div>
       </div>
     );
   }

@@ -1,6 +1,4 @@
-
 import React from 'react'
-// import ReactDOM from 'react-dom'
 import WaveSurfer from 'react-wavesurfer'
 import PlayButton from '../button/playButton'
 
@@ -21,7 +19,6 @@ export default class Waveform extends React.Component {
   }
 
   clicked() {
-
     console.log('boom');
   }
 
@@ -39,9 +36,6 @@ export default class Waveform extends React.Component {
     });
   }
 
-
-
-
   render() {
     return (
       <div className='waveform'>
@@ -56,57 +50,7 @@ export default class Waveform extends React.Component {
         />
       <PlayButton />
 
-
       </div>
     )
   }
 }
-
-// <button onClick={this.state.clicked}>Boom</button>
-// <PlayButton onClick={this.state.handleTogglePlay}/>
-// Waveform.defaultProps = {
-//   src: ""
-// }
-
-//
-// getInitialState() {
-//   return {
-//
-//   }
-// }
-
-// componentDidMount() {
-//   this.$el = ReactDOM.findDOMNode(this)
-//   this.$waveform = this.$el.querySelector('.wave')
-//   this.wavesurfer = WaveSurfer.create({
-//     container: this.$waveform,
-//     waveColor: 'violet',
-//     progressColor: 'purple',
-//   })
-//   this.wavesurfer.load(this.props.src)
-// }
-
-// componentWillUnmount() {
-// }
-
-
-// <WaveSurfer playing={this.state.playing} />
-
-// render() {
-//   return (
-//     <div className='waveform'>
-//       <div className='wave'></div>
-//       <PlayButton />
-//     </div>
-//   )
-// }
-
-
-
-
-
-
-
-// pos: this.state.pos,
-// onPosChange: this.handlePosChange,
-// playing: this.state.playing

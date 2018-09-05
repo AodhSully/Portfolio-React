@@ -4,7 +4,8 @@ import '../../assets/css/default.min.css'
 const transitionTime = 200;
 const transitionStyle = `left ${transitionTime}ms, right ${transitionTime}ms`;
 /*Logic for information displayed by selected tabs and altering the length of the underline on each tab */
-class Tabs extends React.Component {
+
+export default class Tabs extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -24,7 +25,6 @@ class Tabs extends React.Component {
 
   getSizes() {
     const rootBounds = this.root.getBoundingClientRect();
-
     const sizes = {};
 
     Object.keys(this.els).forEach((key) => {
@@ -86,5 +86,3 @@ class Tabs extends React.Component {
     }
   }
 }
-
-export default Tabs;

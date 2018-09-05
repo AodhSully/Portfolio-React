@@ -6,7 +6,7 @@ export default function star (s) {
 
   // Star [] p.stars = new Star[900];
   s.setup = function () {
-    s.createCanvas(600, 400);
+    s.createCanvas(900, 400);
     s.stars = new Star(200);
 
     for (var i = 0; i < s.stars.length; i++){
@@ -24,4 +24,4 @@ export default function star (s) {
       s.stars[i].show();
     }
   }
-};
+}

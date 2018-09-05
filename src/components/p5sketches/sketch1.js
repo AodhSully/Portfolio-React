@@ -1,5 +1,3 @@
-
-
 export default function sketch (p) {
   let rotation = 0;
 
@@ -15,7 +13,7 @@ export default function sketch (p) {
   };
 
   p.draw = function () {
-    p.background(100);
+    p.background(51);
     p.noStroke();
 
     p.push();
@@ -33,7 +31,7 @@ export default function sketch (p) {
     p.pop();
   };
 
-  p.windowResizeed = function () {
-    p.resizeCanvas(p.windowWidth, p.windowHeight)
-  }
+  // p.windowResizeed = function () {
+  //   p.resizeCanvas(p.windowWidth, p.windowHeight)
+  // }
 };

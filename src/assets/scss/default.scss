@@ -12,7 +12,7 @@ $blue: #22285c;
 @mixin translateY($e) {
   -webkit-transform: translateY($e);
   -moz-transform: translateY($e);
-      transform: translateY($e);
+  transform: translateY($e);
 }
 
 @mixin transition($e) {
@@ -36,47 +36,50 @@ $blue: #22285c;
 }
 
 .homePage {
-  .text{
-    color: $white;
-  }
-  .bodyOfText {
-    color: $green;
+  .homeText{
+    text-align: center;
+
+    .textHomePage{
+      vertical-align: middle;
+    }
   }
 }
 
-
 .gitPage {
   .gitContainer {
-      text-align:center;
     .gitText{
-        text-align:center;
-      padding-left: 20px;
-      display: table;
+      text-align: center;
     }
+
     .gitLogo {
-      //display: inline-block;
-      //margin: 0 auto;
       max-width: 400px;
       padding: 20px;
-      //width:960px;
       margin:auto;
       overflow:hidden;
-      display:inline-block;
-
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
     }
   }
 }
 
 .p5Page {
+  .carousel {
+    .slider-wrapper {
+      .p5Title {
+        padding: 5px;
+        text-align: center;
+      }
 
-  .carousel .slider-wrapper {
+      .control-dots {
+        padding-top: 5px;
+        text-align: center;
+      }
 
-    .carouselImage {
-      padding-top: 10%;
-      .carouselImagePic {
-
-        .p5text{
-          padding: 2px;
+      .carouselImage {
+        padding-top: 10%;
+        .carouselImagePic {
         }
       }
     }
@@ -94,9 +97,9 @@ $blue: #22285c;
   }
 
   .canvas .slide {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .p5text{
@@ -111,36 +114,34 @@ $blue: #22285c;
     border-color: $white;
     z-index: 10;
   }
+  
   .soundcoudTrackIcon{
     text-align: center;
     padding-top: 20px;
 
-    .trackIcon {
-    max-width: 300px;
-  }
-
-
+      .trackIcon {
+      max-width: 300px;
+      }
   }
 }
 
 .videoPage {
   .videoElement {
-
     padding-top: 20px;
   }
+
   .videoText {
     text-align: center;
+    color: $white;
   }
+
   .videoPlayer {
    display: block;
-   margin-left: auto;
-   margin-right: auto;
-   margin: 0 auto;
+   margin: auto;
    width: 50%;
-   padding-top: 10%;
+   padding-top: 20px;
 
    .player {
-
    }
   }
 }
@@ -150,9 +151,9 @@ $blue: #22285c;
     text-align: center;
     padding-top: 20px;
 
-    .trackIcon {
-    max-width: 300px;
-    }
+      .trackIcon {
+      max-width: 300px;
+      }
   }
 }
 
@@ -160,22 +161,68 @@ $blue: #22285c;
   .pageTitle {
     text-align: center;
   }
+
   .mixcoudTrackIcon {
     text-align: center;
-
     padding-top: 20px;
   }
+
   .trackIcon {
     max-width: 350px;
     padding: 10px;
   }
 }
 
+.imagePage {
+  .imageContainer{
+
+    .imageText{
+      text-align: center;
+    }
+
+    .imageRow {
+      .imageEditImages{
+        margin:auto;
+        overflow:hidden;
+        // display: block;
+        // float: left;
+        // // margin-left: 33%;
+        // // margin-right: 66%;
+        // width: 20%;
+        //
+        // // display: inline-block;
+        // // margin: auto;
+        // // width: 50%;
+        max-height: 650px;
+        max-width: 450px;
+        padding: 15px;
+        // margin-left: 15%;
+        // margin-right: 15%;
+
+
+        align-items: center;
+        padding-right: 15px;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    }
+  }
+}
+
 .footerWrapper{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
   text-align: center;
+  padding-top: 20px;
+
     .icon {
       padding: 5px;
       max-height: 50px;
+
       .footerText {
         font-size: 9px;
     }
