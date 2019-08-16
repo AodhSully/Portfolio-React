@@ -114,7 +114,7 @@ $blue: #22285c;
     border-color: $white;
     z-index: 10;
   }
-  
+
   .soundcoudTrackIcon{
     text-align: center;
     padding-top: 20px;
@@ -138,7 +138,7 @@ $blue: #22285c;
   .videoPlayer {
    display: block;
    margin: auto;
-   width: 50%;
+   // width: 50%;
    padding-top: 20px;
 
    .player {
@@ -182,30 +182,22 @@ $blue: #22285c;
 
     .imageRow {
       .imageEditImages{
-        margin:auto;
-        overflow:hidden;
-        // display: block;
-        // float: left;
-        // // margin-left: 33%;
-        // // margin-right: 66%;
-        // width: 20%;
-        //
-        // // display: inline-block;
-        // // margin: auto;
+        // margin:auto;
+        // overflow:hidden;
+        // margin-left: auto;
+        // margin-right: auto;
+        // width: 50%;
+
+        // margin: auto;
         // // width: 50%;
-        max-height: 650px;
-        max-width: 450px;
-        padding: 15px;
-        // margin-left: 15%;
-        // margin-right: 15%;
 
+  // max-width: 100%;
+        width: auto;
+        max-height: 500px;
+        padding: 15px 15px 15px 50px;
 
-        align-items: center;
-        padding-right: 15px;
         display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+
       }
     }
   }

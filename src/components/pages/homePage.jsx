@@ -6,7 +6,9 @@ export default class HomePage extends Component {
   render() {
     return (
       <div className="homePage">
-        <h1 className="glitch" data-text="Portfolio">Portfolio</h1>
+        <div className="pageTitle">
+          <h1 className="glitch" data-text="Portfolio">Portfolio</h1>
+        </div>
         <div className="homeText">
           <h1>Welcome to my Portfolio</h1>
           <br/>

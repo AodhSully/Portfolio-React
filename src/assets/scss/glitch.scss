@@ -2,13 +2,18 @@
 $black: #222222;
 
 .glitch{
+  // display:flex;
   color:white;
   font-size:100px;
   position:relative;
   height: 100px;
-  margin:0 auto;
+  margin:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
   padding-top: 20px;
-  width: 11%;
+  // width: 11%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -35,7 +40,10 @@ $black: #222222;
   overflow:hidden;
   clip:rect(0,1000,1000,0);
   animation:noise-anim 1s infinite linear alternate-reverse;
-  text-align: center;
+  // text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width:40%;
 }
 
 @keyframes noise-anim-2{
@@ -59,5 +67,8 @@ $black: #222222;
   overflow:hidden;
   clip:rect(0,1000,1000,0);
   animation:noise-anim-2 1s infinite linear alternate-reverse;
-  text-align: center;
+  // text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width:40%;
 }

@@ -8,10 +8,10 @@ export default class Mixing extends React.Component {
         <h1 className="glitch" data-text="Mixing">Mixing</h1>
 
           <div className="soundcoudTrackIcon">
-            <a href="https://soundcloud.com/mrbadcat" target="_blank" rel="noopener noreferrer"><p>More Tracks available here :</p></a>
-            <a href="https://soundcloud.com/mrbadcat" target="_blank" rel="noopener noreferrer"><img className='trackIcon' src={soundcloud} alt={soundcloud}/></a>
+            <a href="https://soundcloud.com/aodhosullivanportfolio" target="_blank" rel="noopener noreferrer"><p>More Tracks available here :</p></a>
+            <a href="https://soundcloud.com/aodhosullivanportfolio" target="_blank" rel="noopener noreferrer"><img className='trackIcon' src={soundcloud} alt={soundcloud}/></a>
           </div>
-          
+
       </div>
     );
   }

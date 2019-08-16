@@ -1,23 +1,14 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
 import { Nav, NavItem,  Navbar,  } from 'react-bootstrap';
-import Paper from 'material-ui/Paper';
+// import Paper from 'material-ui/Paper';
 import { LinkContainer } from 'react-router-bootstrap';
-// import { BrowserRouter as Router, Route } from 'react-router-dom';
-// import HomePage from '../../components/pages/homePage'
-// import Products from '../../components/pages/products'
-// import P5 from '../../components/pages/p5'
-// import github from '../../components/pages/github'
-// import tracks from '../../components/pages/tracks';
-// import mixing from '../../components/pages/mixing';
-// import sets from '../../components/pages/sets';
 
 export default class NavBar extends Component {
   render() {
     return (
       <div>
 
-      <Paper zDepth={2}>
+
 
         <Navbar inverse collapseOnSelect>
           <Navbar.Header>
@@ -54,17 +45,11 @@ export default class NavBar extends Component {
                 <NavItem eventKey={4}>Image Editing</NavItem>
               </LinkContainer>
             </Nav>
-            <Nav pullRight>
-              
 
-              <NavItem eventKey={2} href="#">
-                Link Right
-              </NavItem>
-            </Nav>
           </Navbar.Collapse>
         </Navbar>
 
-      </Paper>
+  
     </div>
     );
   }

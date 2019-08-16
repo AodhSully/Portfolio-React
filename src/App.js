@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+// import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 //import TransitionGroup from "react-transition-group/TransitionGroup";
 
 import './assets/css/default.min.css';
@@ -23,7 +23,7 @@ import Footer from './components/footerComponent/footer.jsx';
 class App extends Component {
   render() {
     return (
-      <MuiThemeProvider>
+
           <Router>
         <div className="App">
 
@@ -42,7 +42,7 @@ class App extends Component {
           <Footer />
         </div>
       </Router>
-    </MuiThemeProvider>
+
     );
   }
 }

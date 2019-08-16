@@ -14,7 +14,7 @@ export default class Footer extends Component {
           <a href="https://www.linkedin.com/in/aodhosullivan/" target="_blank" rel="noopener noreferrer"><img className='icon' src={linkedin} alt={linkedin}/></a>
           <a href="https://soundcloud.com/mrbadcat" target="_blank" rel="noopener noreferrer"><img className='icon' src={soundcloud} alt={soundcloud}/></a>
           <a href="https://www.mixcloud.com/mrbadcat/" target="_blank" rel="noopener noreferrer"><img className='icon' src={mixcloud} alt={mixcloud}/></a>
-          <p className="footerText"><i>Aodh O'Sullivan &copy; 2018</i></p>
+          <p className="footerText"><i>Aodh O'Sullivan &copy; 2019</i></p>
 
         </footer>
       </div>
