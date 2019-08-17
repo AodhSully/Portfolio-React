@@ -19,17 +19,15 @@ import mixing from './components/pages/mixing';
 import imageEditing from './components/pages/imageEditing';
 import Footer from './components/footerComponent/footer.jsx';
 
-
 class App extends Component {
   render() {
     return (
-
-          <Router>
+      <Router>
         <div className="App">
 
           <Particles />
           <NavBar />
-
+                <Route exact path='/' component={HomePage} />
                 <Route exact path='/homePage' component={HomePage} />
                 <Route exact path='/github' component={github} />
                 <Route exact path='/p5' component={p5} />
@@ -38,11 +36,9 @@ class App extends Component {
                 <Route exact path='/mixing' component={mixing} />
                 <Route exact path='/video' component={Video} />
                 <Route exact path='/imageEditing' component={imageEditing} />
-
           <Footer />
         </div>
       </Router>
-
     );
   }
 }

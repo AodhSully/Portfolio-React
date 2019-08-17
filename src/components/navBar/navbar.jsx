@@ -7,9 +7,6 @@ export default class NavBar extends Component {
   render() {
     return (
       <div>
-
-
-
         <Navbar inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
@@ -18,7 +15,6 @@ export default class NavBar extends Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
-
               <LinkContainer to="/homePage">
                 <NavItem> Home</NavItem>
               </LinkContainer>
@@ -28,7 +24,6 @@ export default class NavBar extends Component {
               <LinkContainer to="/p5">
                 <NavItem eventKey={2}>P5.js </NavItem>
               </LinkContainer>
-
               <LinkContainer to="/tracks">
                 <NavItem eventKey={3.1}>Tracks</NavItem>
               </LinkContainer>
@@ -45,11 +40,8 @@ export default class NavBar extends Component {
                 <NavItem eventKey={4}>Image Editing</NavItem>
               </LinkContainer>
             </Nav>
-
           </Navbar.Collapse>
         </Navbar>
-
-  
     </div>
     );
   }
